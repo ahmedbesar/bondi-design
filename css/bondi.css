@@ -1,0 +1,191 @@
+:root{
+    --dark-color:#19283f ;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400 ;
+    --section-color:#eff7fa;
+    
+}
+body{
+    font-family: 'Roboto Serif', serif;
+    
+}
+p,ul{
+    font-size: 13px;
+}
+blockquote{
+    font-size: 11px;
+}
+/* Start navbar */
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color)!important;
+}
+.navbar{
+    background-color:var(--dark-color) !important;
+}
+.navbar .navbar-nav .nav-link{
+color: white !important ;
+}
+
+.search{
+    color: var(--green-color);
+    border-left: 1px  solid var(--green-color);
+    
+    
+}
+.container .navbar-toggler{
+    background-color: var(--green-color);
+}
+
+.main-btn{
+    background-color: var(--red-color);
+    
+}
+.main-btn:hover{
+    background-color: var(--dark-color) ;
+    color: var(--green-color);
+}
+/* End navbar */
+/* start landing  */
+.landing {
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 60px);
+
+}
+/* End landing */
+/* start features */
+.playstation-icon{
+    color: var(--yellow-color);
+    height: 100px;
+    width: 100px;
+}
+.main-title::after{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 200px;
+    background-color: var(--green-color);
+    bottom: 25px;
+    left: 50%;
+    transform: translatex(-50%);
+
+}
+.features .icon-holder{
+    height: 200px;
+    
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translatex(-50%);
+}
+.features .icon-holder .number{
+    color: var(--section-color);
+    font-size: 12rem;
+}
+
+.features .icon-holder .icon{
+    color: var(--green-color);
+}
+.features .feat h4{
+    color:var(--yellow-color);
+}
+/* End features */
+/* start our work  */
+.our-work {
+    background-color: var(--section-color);
+}
+.our-work .filter .five-button{
+    border: none;
+    background-color: var(--section-color);
+    
+}
+.our-work .filter .five-button.active,
+.our-work .filter .five-button:hover{
+    background-color:var(--red-color);
+    border-radius: 14px;
+    color: var(--yellow-color ) !important;
+}
+.our-work .box{
+    position: relative;
+    overflow: hidden;
+    padding:  5px ;
+    background-color: white;
+}
+.our-work .box::before {
+    content: attr(data-work);
+    position: absolute;
+    background-color: rgb(51 209 204 / 76%);
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;  
+    color: white;
+    transition: 0.4s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+    transform: translateX(0);
+}
+/* end our work  */
+/* start stuff */
+.stuff .description{
+    max-width: 500px;
+}
+/* end stuff */
+/* start our-team */
+.our-team{
+    background-color: var(--section-color);
+}
+.our-team .intro h2{
+color: var(--yellow-color) !important;
+font-weight: bold;
+}
+.our-team h4{
+background-color: var(--green-color) !important;
+}
+/* end our-team */
+
+/* start teachs */
+.teachs .start-project{
+    background-color: var(--dark-color);
+}
+/* end teachs */
+/* start blog */
+/* end blog */
+
+/* start-subscribe */
+.subscribe{
+    background-color:var(--yellow-color) ;
+}
+.subscribe form input[type="text"]{
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+}
+.subscribe form input:focus{
+    outline: none;
+}
+.subscribe form input[type="text"]::placeholder{
+    color: white;
+}
+/* end-subscribe */
+
+
+/* start footer */
+footer{
+    background-color: var(--dark-color);
+}
+footer .green{
+    color: var(--green-color);
+}
+footer .yellow{
+    color: var(--yellow-color);
+}
+
+/* end footer */
+
